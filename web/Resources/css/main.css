@@ -1,3 +1,32 @@
-p {
-    font-family: 'Ubuntu Light', sans-serif;
+body {
+    background: #2E3436;
+    font-family: Ubuntu, sans-serif;
+    font-size:14px;
+}
+.user {
+    color: #8AE234;
+    display:inline;
+    font-weight: 600;
+}
+.directory {
+    color: #729FCF;
+    display:inline;
+    font-weight: 600;
+}
+.command {
+    color: #FFFFFF;
+    display:inline;
+}
+input {
+    border:none;
+    color:#FFFFFF;
+    font-family: Ubuntu, sans-serif;
+    background:none;
+    font-size:14px;
+}
+.command_block {
+    display:inline;
+}
+.response {
+    color: #FFFFFF;
 }
