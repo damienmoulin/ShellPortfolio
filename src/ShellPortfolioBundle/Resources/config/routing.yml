@@ -1,0 +1,3 @@
+shell_portfolio_homepage:
+    path:     /
+    defaults: { _controller: ShellPortfolioBundle:Default:index }
