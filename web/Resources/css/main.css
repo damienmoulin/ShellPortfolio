@@ -2,6 +2,7 @@ body {
     background: #2E3436;
     font-family: Ubuntu, sans-serif;
     font-size:14px;
+    text-indent: 5px;
 }
 .user {
     color: #8AE234;

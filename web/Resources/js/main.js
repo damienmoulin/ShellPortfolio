@@ -2,17 +2,34 @@ jQuery(document).ready(function() {
 
     var keyEnter = 13;
     var container = $('.container');
+    var connectMessage =
+        '<div class="bloc">'+
+            '<div class="reponse">'+
+                'Connect ...</br>'+
+                'Connected to shellPortolio</br>'+
+                '220 Welcome to Damien Moulin website</br>'+
+                'Your loged on anonym</br>'+
+            '</div>'+
+        '</div>';
 
     //DEFINED DEFAULT VALUE :
     var name = 'anonym',
         server = 'shell',
-        directory = '~ $';
+        directory = '~ $ ',
+        commandItem = '<input type="text">',
+        reponse ='';
 
 
     window.onload = init;
     function init(){
         //Initialization
+        //Append Connect Message
+        container.append(connectMessage);
+
+        setNewInput();
+
     }
+
 
     //DEFINE COMMAND BLOC
     function defineBlocCommand(){
@@ -21,10 +38,9 @@ jQuery(document).ready(function() {
                 '<div class="command_block">' +
                     '<div class="user">'+name+'@'+server+'</div>' +
                     '<div class="directory">'+directory+'</div>' +
-                    '<div class="command"><input type="text"></div>' +
+                    '<div class="command">'+commandItem+'</div>' +
                 '</div>' +
-                '<div class="reponse">' +
-                '</div>' +
+                '<div class="reponse">'+reponse+'</div>' +
             '</div>';
 
         return generatedBloc;
