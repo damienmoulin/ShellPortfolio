@@ -4,7 +4,7 @@ jQuery(document).ready(function() {
     var container = $('.container');
     var connectMessage =
         '<div class="bloc">'+
-            '<div class="reponse">'+
+            '<div class="response">'+
                 'Connect ...</br>'+
                 'Connected to shellPortolio</br>'+
                 '220 Welcome to Damien Moulin website</br>'+
@@ -15,9 +15,9 @@ jQuery(document).ready(function() {
     //DEFINED DEFAULT VALUE :
     var name = 'anonym',
         server = 'shell',
-        directory = '~ $ ',
+        directory = ' ~ $ ',
         commandItem = '<input type="text">',
-        reponse ='';
+        response ='';
 
 
     window.onload = init;
@@ -40,7 +40,7 @@ jQuery(document).ready(function() {
                     '<div class="directory">'+directory+'</div>' +
                     '<div class="command">'+commandItem+'</div>' +
                 '</div>' +
-                '<div class="reponse">'+reponse+'</div>' +
+                '<div class="response">'+response+'</div>' +
             '</div>';
 
         return generatedBloc;
@@ -56,6 +56,18 @@ jQuery(document).ready(function() {
 
     }
 
+    //CHECK IF COMMAND IS TRUE COMMAND
+    function checkCommand(command)
+    {
+        return true
+    }
+
+    //GENERATE A RESPONSE FOR THE COMMAND
+    function generateResponse(command)
+    {
+        return 'Yes Sir'
+    }
+
     //SUBMIT COMMAND
     function submitCommand()
     {
@@ -68,7 +80,17 @@ jQuery(document).ready(function() {
 
 
         //CALL SCRIPT TO CHECK COMMAND
+        if (checkCommand(command)) {
+            commandResponse = generateResponse(command)
+        }
+        else {
+            commandResponse = 'undefined';
+        }
+
         //DISPLAY REPONSE
+        var oldparent = parent.parent().parent();
+        var newResponse = oldparent.children('.response');
+        newResponse.text(commandResponse);
 
         //DISPLAY A NEW INPUT
         setNewInput();
