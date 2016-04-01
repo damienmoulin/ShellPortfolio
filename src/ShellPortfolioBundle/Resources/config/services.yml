@@ -1,0 +1,4 @@
+services:
+#    shell_portfolio.example:
+#        class: ShellPortfolioBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]

@@ -1,3 +1,5 @@
-app:
-    resource: "@AppBundle/Controller/"
+shell_portfolio:
+    resource: "@ShellPortfolioBundle/Controller/"
     type:     annotation
+    prefix:   /
+
