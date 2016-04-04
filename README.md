@@ -16,4 +16,8 @@ Shell version of inovative portfolio
      find
      help
      info (on file /directory)
+     encrypt ( personnal crypting )
+     decrypt ( personnal crypting )
      
+     
+##  Command JSON
