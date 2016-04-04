@@ -21,3 +21,5 @@ Shell version of inovative portfolio
      
      
 ##  Command JSON
+
+List of command and Directories tree => src/ShellPortfolioBundle/Resources/command/command.json
