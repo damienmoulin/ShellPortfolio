@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3365b4ea-4257-4891-b0d7-dfd90d85cd10" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-    </list>
+    <list default="true" id="3365b4ea-4257-4891-b0d7-dfd90d85cd10" name="Default" comment="" />
     <ignored path="ShellPortfolio.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -364,7 +362,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="3" width="805" height="740" extended-state="1" />
+    <frame x="0" y="3" width="805" height="740" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.498132" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
