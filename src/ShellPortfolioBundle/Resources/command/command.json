@@ -1,0 +1,48 @@
+{
+  "command" : {
+
+  },
+  "directory": {
+    "bin"  : {
+      "chgrp" : {},
+      "chmod" : {},
+      "chown" : {},
+      "chvt" : {},
+      "cp" : {},
+      "cpio" : {},
+      "dash" : {},
+      "date" : {},
+      "dd" : {},
+    },
+    "dev"  : {},
+    "opt"  : {},
+    "run"  : {},
+    "sys"  : {},
+    "var"  : {},
+    "boot ": {},
+    "etc"  : {},
+    "lib"  : {},
+    "media": {},
+    "proc" : {},
+    "sbin" : {},
+    "tmp"  : {},
+    "cdrom": {},
+    "home" : {},
+    "lib64": {},
+    "mnt"  : {},
+    "root" : {},
+    "srv"  : {},
+    "usr"  : {
+      "bin" : {},
+      "etc" : {},
+      "games" : {},
+      "include" : {},
+      "lib" : {},
+      "local" : {},
+      "sbin" : {},
+      "share" : {},
+      "src" : {},
+    }
+
+  }
+}
