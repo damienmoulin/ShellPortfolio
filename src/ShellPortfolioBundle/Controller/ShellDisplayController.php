@@ -23,4 +23,13 @@ class ShellDisplayController extends Controller
     {
         return $this->render('ShellDisplay/index.html.twig');
     }
+
+    /**
+     * @Route("command/{command}", name="shell_command")
+     */
+    public function commandAction($command)
+    {
+        dump($command);
+        return true;
+    }
 }
