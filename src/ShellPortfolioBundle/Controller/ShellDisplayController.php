@@ -31,6 +31,6 @@ class ShellDisplayController extends Controller
      */
     public function commandAction($command)
     {
-        return new Response($command);
+        return new Response('Undefined command');
     }
 }
