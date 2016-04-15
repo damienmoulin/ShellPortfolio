@@ -3,3 +3,5 @@ shell_portfolio:
     type:     annotation
     prefix:   /
 
+fos_js_routing:
+     resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"

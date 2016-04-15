@@ -59,6 +59,11 @@ jQuery(document).ready(function() {
     //CHECK IF COMMAND IS TRUE COMMAND
     function checkCommand(command)
     {
+        $.ajax({
+            url: Routing.generate('shell_command', {'command' : command})
+        }).done(function(data) {
+            console.log(data);
+        });
         return true
     }
 

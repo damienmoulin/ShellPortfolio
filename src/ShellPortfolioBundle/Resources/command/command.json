@@ -1,6 +1,23 @@
 {
   "command" : {
-
+    "cd" : {},
+    "sudo" : {},
+    "ls" : {
+      "-l" : {},
+      "-a" : {},
+    },
+    "send" : {},
+    "tchat" : {},
+    "chmod" : {},
+    "whoami" : {},
+    "date" : {},
+    "cat" : {},
+    "find" : {},
+    "help" : {},
+    "info" : {},
+    "encrypt" : {},
+    "decrypt" : {},
+    "login" : {}
   },
   "directory": {
     "bin"  : {

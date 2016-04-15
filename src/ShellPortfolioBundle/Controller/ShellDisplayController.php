@@ -10,6 +10,7 @@ namespace ShellPortfolioBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Component\HttpFoundation\Response;
 
 /**
  * @Route("/")
@@ -22,5 +23,14 @@ class ShellDisplayController extends Controller
     public function indexAction()
     {
         return $this->render('ShellDisplay/index.html.twig');
+    }
+
+    /**
+     * @Route("command/{command}", name="shell_command")
+     * @return Response
+     */
+    public function commandAction($command)
+    {
+        return new Response($command);
     }
 }
