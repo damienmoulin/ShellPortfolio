@@ -5,6 +5,3 @@ shell_portfolio:
 
 fos_js_routing:
      resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"
-
-fos_js_routing:
-     routes_to_expose: [ (.*) ]

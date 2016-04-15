@@ -10,6 +10,7 @@ namespace ShellPortfolioBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Component\HttpFoundation\Response;
 
 /**
  * @Route("/")
@@ -26,10 +27,10 @@ class ShellDisplayController extends Controller
 
     /**
      * @Route("command/{command}", name="shell_command")
+     * @return Response
      */
     public function commandAction($command)
     {
-        dump($command);
-        return true;
+        return new Response($command);
     }
 }

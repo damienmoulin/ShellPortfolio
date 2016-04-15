@@ -62,7 +62,7 @@ jQuery(document).ready(function() {
         $.ajax({
             url: Routing.generate('shell_command', {'command' : command})
         }).done(function(data) {
-            console.log('OK');
+            console.log(data);
         });
         return true
     }
