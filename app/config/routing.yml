@@ -1,7 +1,10 @@
 shell_portfolio:
-    resource: "@ShellPortfolioBundle/Controller/"
+    resource: "@AppBundle/Controller/"
     type:     annotation
     prefix:   /
 
 fos_js_routing:
      resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
