@@ -1,4 +1,4 @@
-shell_portfolio:
+appbundle:
     resource: "@AppBundle/Controller/"
     type:     annotation
     prefix:   /
