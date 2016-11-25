@@ -1,5 +1,6 @@
 jQuery(document).ready(function() {
 
+    var rtn;
     var keyEnter = 13;
     var container = $('.container');
     var connectMessage =
@@ -60,17 +61,22 @@ jQuery(document).ready(function() {
     function checkCommand(command)
     {
         $.ajax({
-            url: Routing.generate('shell_command', {'command' : command})
-        }).done(function(data) {
-            console.log(data);
+            url: Routing.generate('shell_command', {'command' : command}),
+            async: false,
+            success :  function(data) {
+                setResponse(data);
+                return true;
+            }
         });
-        return true
+
+        return true;
     }
 
-    //GENERATE A RESPONSE FOR THE COMMAND
-    function generateResponse(command)
+    function setResponse(data)
     {
-        return 'Yes Sir'
+        response = data;
+        return true;
+
     }
 
     //SUBMIT COMMAND
@@ -85,20 +91,21 @@ jQuery(document).ready(function() {
 
 
         //CALL SCRIPT TO CHECK COMMAND
-        if (checkCommand(command)) {
-            commandResponse = generateResponse(command)
-        }
-        else {
-            commandResponse = 'undefined';
-        }
+        var commandResponse = checkCommand(command);
 
-        //DISPLAY REPONSE
-        var oldparent = parent.parent().parent();
-        var newResponse = oldparent.children('.response');
-        newResponse.text(commandResponse);
+        if (commandResponse) {
+            //DISPLAY REPONSE
+            var oldparent = parent.parent().parent();
+            var newResponse = oldparent.children('.response');
+            newResponse.text(response);
+
+            //RESET VARIABLE RESPONSE
+            response = '';
+        }
 
         //DISPLAY A NEW INPUT
         setNewInput();
+
     }
 
     //FOCUS ON INPUT
