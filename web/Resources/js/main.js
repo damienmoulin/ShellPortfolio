@@ -61,7 +61,7 @@ jQuery(document).ready(function() {
     function checkCommand(command)
     {
         $.ajax({
-            url: Routing.generate('shell_command', {'command' : command}),
+            url: Routing.generate('appbundle_command_get', {'command' : command}),
             async: false,
             success :  function(data) {
                 setResponse(data);
