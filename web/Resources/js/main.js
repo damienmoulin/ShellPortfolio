@@ -9,7 +9,7 @@ jQuery(document).ready(function() {
                 'Connect ...</br>'+
                 'Connected to shellPortolio</br>'+
                 '220 Welcome to Damien Moulin website</br>'+
-                'Your loged on anonym</br>'+
+                'Your logged as anonymous</br>'+
             '</div>'+
         '</div>';
 
