@@ -46,3 +46,11 @@
 
 # PhpStorm IDEA
 /.idea/
+
+/var/*
+!/var/cache
+!/var/logs
+!/var/sessions
+!var/SymfonyRequirements.php
+/web/upload/*
+/app/Resources/client/node_modules
